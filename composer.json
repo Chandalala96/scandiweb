@@ -1,0 +1,15 @@
+{
+    "name": "pc/scandiweb",
+    "authors": [
+        {
+            "name": "Chandalala",
+            "email": "info@chandalalawebdev.com"
+        }
+    ],
+    "autoload": {
+         "psr-4": {
+            "app\\": "./"
+         }
+    },
+    "require": {}
+}

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 35px;
+}
+
+.navigation{
+    border-bottom: 2px solid black;
+}
+
+.btn{
+    border: 2px solid black;
+    box-shadow: 2px 5px black;
+    font-size: 12px;
+}
+
+.product-list{
+    border-bottom: 2px solid black;
+}
+
+.card{
+    border: 3px solid black;
+}
+
+
+form{
+    margin: auto;
+    width: 40%;
+}
+
+.form-control{
+    width: 100%;
+}
+
+.dynamic-form{
+    padding: 15px;
+    border: 2px solid black;
+}
+
+#productList-form{
+    border: none;
+}
+
