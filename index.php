@@ -11,7 +11,7 @@ $app = new Application(dirname(__DIR__));
 
 
 $app->router->get('/', [SiteController::class, 'home']);
-$app->router->get('/addproduct', [SiteController::class, 'addproduct']);
+$app->router->get('/addproduct', [SiteController::class, 'addproduct']); 
 
 
 

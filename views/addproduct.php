@@ -24,7 +24,7 @@
     <main>
         <section class="mt-3">
             <div class="container text-center product-list">
-                <form id="product-form" method="POST" action="./includes/addProduct_inc.php">
+                <form id="product-form" method="POST" action="./actions/addProduct_action.php">
                     <div class="mb-3">
                         <div class="d-flex">
                             <label for="sku" class="form-label me-2 mt-2">SKU: </label>
