@@ -7,7 +7,7 @@ namespace app\classes;
 class ProductView_class extends ProductManager_class {
    public function getProduct() {
       $results = $this->getProducts();
-      echo '<form method="POST" class="form-control" action="./actions/deleteProducts_action.php" id="productList-form">';
+      echo '<form method="POST" class="form-control" action="" id="productList-form">';
       echo ' <div class="row">';
       foreach ($results as $result) {
          echo ' <div class="col-sm-3 mb-5">

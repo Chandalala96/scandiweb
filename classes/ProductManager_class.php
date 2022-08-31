@@ -8,11 +8,9 @@ abstract class ProductManager_class extends DbConnect_class{
 	   protected function setProducts($sku_no,  $product_name, $product_price, $product_selector, $product_description) {
       $stmt = $this->connect()->prepare('INSERT INTO products (sku_no,  product_name, product_price, product_selector, product_description) VALUES (?, ?, ?, ?, ?);');
 
-      if(!$stmt->execute(array($sku_no,  $product_name, $product_price, $product_selector, $product_description))) {
-          $stmt = null;
-          header("location: ../addproduct.php?error=insertfailed");
-          exit();
-      } 
+      $stmt->execute(array($sku_no, $product_name, $product_price, $product_selector, $product_description));
+
+    
       
    }
 
@@ -30,11 +28,9 @@ abstract class ProductManager_class extends DbConnect_class{
      protected function deleteProducts($extracted_ids) {
         foreach ($extracted_ids as $id) {
           $stmt = $this->connect()->prepare('DELETE FROM products WHERE product_id IN(?);');
-           if(!$stmt->execute(array($id))) {
-          $stmt = null;
-          header("location: ../index.php?error=deletefailed");
-          exit();
-      } 
+
+          $stmt->execute(array($id));
+      
         }
       
    }
